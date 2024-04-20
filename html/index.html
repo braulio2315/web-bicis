@@ -4,37 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bicicletas Insurgentes</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <header>
-        <h1 id="titulo">Bicicletas Insurgentes</h1>
-        <div class="barra-superior">
-            <div class="busqueda">
-                <input type="text" placeholder="Buscar...">
-                <button type="submit">Buscar</button>
+    <section class="header__cabeza">
+        <div class="header__logo-container">
+            <img class="icono_mx" src="logo.jpg" alt="">
+        </div>
+        <h1 class="header__header"> Envíos a toda la república </h1>
+        <div class="header__logo-container">
+            <img class="header__logo-cabeza" src="usuario.png">
+            <img class="icono_mx" src="mexico.png" alt="">
+        </div>
+    </section>
+
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="logo.jpg">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="montaña.html">Montaña</a></li>
+                <li class="header__nav-item"><a href="#">Niños</a></li>
+                <li class="header__nav-item"><a href="#">Carreras</a></li>
+                <li class="header__nav-item"><a href="#">Equipamiento</a></li>
+                <li class="header__nav-item"><a href="#">Mantenimiento</a></li>
+                <li class="header__nav-item"><a href="#">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <img class="banner__photo" src="banner.jpg" alt="">
+    </section>
+
+    <section class="bicicletas">
+        <h2 class="bicicletas__tittle-h2">Productos mas buscados</h2>
+         <div class="bicicletas__bicis-container">
+              <div class="bicicletas__proyect">
+                <h2 class="bicicletas__proyect-name"> Montaña</h2>
+              </div>
+              <div class="bicicletas__proyect">
+                <h2 class="bicicletas__proyect-name"> Carreras</h2>
+              </div>
+              <div class="bicicletas__proyect">
+                <h2 class="bicicletas__proyect-name"> Niños</h2>
+              </div>
+              <div class="bicicletas__proyect">
+                <h2 class="bicicletas__proyect-name"> BMX</h2>
+              </div>
+              <div class="bicicletas__proyect">
+                <h2 class="bicicletas__proyect-name"> EBT</h2>
+              </div>
+              <div class="bicicletas__proyect">
+                <h2 class="bicicletas__proyect-name">Accesorios</h2>
+              </div>
+         </div>
+    </section>
+     <section class="tienda">
+        <img src="tienda.png" alt="">
+     </section>
+
+    <footer>
+        <div class="footer__content">
+
+            <div class="footer__about">
+                <h3>Acerca de Benotto</h3>
+                <ul>
+                    <li><a href="#">Historia</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Aviso de privacidad</a></li>
+                    <li><a href="#">Marcas premium</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                </ul>
             </div>
-            <div class="logo">
-                <img src="logo_empresa.png" alt="Logo de la empresa">
-            </div>
-            <div class="usuario">
-                <img src="logo_usuario.png" alt="Logo del usuario">
-            </div>
-            <div class="carrito">
-                <img src="carrito.png" alt="Carrito de compras">
-                <span>0</span>
+            
+            <div class="footer__service">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    
+                    <li><a href="#">Dónde Comprar</a></li>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Política de Garantía</a></li>
+                    
+                    <li><a href="#">Aprende con BI</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                   
+                </ul>
             </div>
         </div>
-    </header>
-    <nav class="navegador">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="home">
-        <h2>Home</h2>
-        <p class="cabeza">Esta es la página principal de la empresa Bicicletas Benabidez</p>
-    </section>
-   
+    </footer>
+    
 </body>
 </html>
